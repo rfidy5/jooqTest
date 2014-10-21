@@ -22,17 +22,20 @@ public class Connectiondb {
 	 */
 	public static synchronized Connection getConnection() {
 //		Connection conn = null;
+		try {
+			if(_conn==null || _conn.isClosed()){
 
-        String userName = "root";
-        String password = "123456";
-        String url = "jdbc:mysql://localhost:3306/jookTest_bdd";
+				String userName = "root";
+				String password = "123456";
+				String url = "jdbc:mysql://localhost:3306/jookTest_bdd";
 
-        try {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-            _conn = DriverManager.getConnection(url, userName, password);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+				Class.forName("com.mysql.jdbc.Driver").newInstance();
+				_conn = DriverManager.getConnection(url, userName, password);
+
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return _conn;
 	}
 	
