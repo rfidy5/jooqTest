@@ -3,7 +3,7 @@ jooqTest
 
 Ce mini-projet permet juste de tester de tester Jooq et ainsi faire la correspondance entre un DSL interne et externe. 
 Dans notre cas,  SQL est utilisé comme DSL externe et Java , à travers Jooq comme DSL interne.
-Queques exemples de correspondances qu'on peut trouver dans le code:
+Quelques exemples de correspondances qu'on peut trouver dans le code:
 
 SQL:
 
