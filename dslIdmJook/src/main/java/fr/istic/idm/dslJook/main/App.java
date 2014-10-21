@@ -64,7 +64,7 @@ public class App {
     
     /**
      * affiche la liste des departements
-     * @param result Result<Record> containing select query Person Results 
+     * @param result Result<Record> containing select query Departements Results 
      */
     public static void showResultDepartements( Result<Record> result){
     	 for (Record r : result) {
@@ -78,7 +78,7 @@ public class App {
     
     /**
      * affiche la liste des persons
-     * @param result Result<Record> containing select query Departements Results 
+     * @param result Result<Record> containing select query Person Results 
      */
     public static void showResultPerson( Result<Record> result){
    	 for (Record r : result) {
